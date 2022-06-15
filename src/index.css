@@ -14,9 +14,31 @@
   --black: hsl(0, 0%, 0%);
   --l-gray: hsl(0, 0%, 55%);
   --d-gray: hsl(0, 0%, 41%);
+  --gradient: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --gradient-hover: linear-gradient(
+    0deg,
+    hsla(0, 0%, 100%, 0.8) 0%,
+    hsla(0, 0%, 100%, 0.8) 100%
+  );
 
   --font-p: "Alata", sans-serif;
   --font-s: "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 548px) {
+  :root {
+    --gradient: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
 
 body {
