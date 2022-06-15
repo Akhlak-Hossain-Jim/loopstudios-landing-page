@@ -8,3 +8,19 @@
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
 }
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --l-gray: hsl(0, 0%, 55%);
+  --d-gray: hsl(0, 0%, 41%);
+
+  --font-p: "Alata", sans-serif;
+  --font-s: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-p);
+  background: var(--white);
+  color: var(--black);
+}
